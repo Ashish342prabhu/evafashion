@@ -1,0 +1,80 @@
+/* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*/
+
+#loginbox {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-color: rgb(253, 227, 227);
+}
+
+#loginbox img {
+    display: flex;
+    width: 100%;
+    height: 184px;
+}
+
+.loginheader {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.smallheader {
+    font-size: 16px;
+    font-weight: 400;
+    color: #535766;
+}
+
+/* .signbox {
+                  padding: 24px 24px 0;
+              } */
+#parent {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#login input {
+    margin-bottom: 5%;
+    width: 100%;
+    height: 35px;
+    /* padding-left: 10%; */
+}
+
+.continue {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+    color: white;
+    font-weight: 500;
+    background-color: #ff3f6c;
+    cursor: pointer;
+    border: none;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.loginbody {
+    width: 80%;
+    margin: auto;
+}
+
+#alert {
+    color: red;
+}
+
+p span {
+    color: #ff3f6c;
+    cursor: pointer;
+}

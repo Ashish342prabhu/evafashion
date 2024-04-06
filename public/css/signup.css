@@ -1,0 +1,71 @@
+#signinbox {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 180px;
+    background-color: rgb(255, 219, 219);
+}
+
+#textbox {
+    width: 80%;
+    margin: 40px auto;
+    margin-bottom: 40px;
+    padding-top: 10px !important;
+}
+
+.signinheader {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+div {
+    display: block;
+}
+
+#formContainer {
+    padding: 10px 10%;
+    margin-top: 40px;
+}
+
+input {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 35px;
+}
+
+.signinbtn {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    color: white;
+    font-weight: 500;
+    background-color: #ff3f6c;
+    cursor: pointer;
+    border: none;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.signintxt {
+    margin-top: 40px;
+}
+
+#alert {
+    color: red;
+    margin-left: 30px;
+}
+
+p span {
+    color: #ff3f6c;
+    cursor: pointer;
+}
+
+#signintext {
+    text-align: center;
+}

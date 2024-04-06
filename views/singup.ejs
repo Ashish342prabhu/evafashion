@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EvaFashion</title>
+    <!-- <link rel="stylesheet" href="../css/index.css"> -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo_container">
+        <a href="/index.html"
+          ><img
+            class="myntra_home"
+            src="/images/EFlogo.png"
+            alt="EvaFashion Home"
+        /></a>
+      </div>
+      <nav class="nav_bar">
+        <a href="/men" >Men</a>
+        <a href="/women">Women</a>
+        <a href="/kids">Kids</a>
+        <a href="/Home">Home & Living</a>
+        <a href="/Beauty">Beauty</a>
+        <a href="/">Studio <sup>New</sup></a>
+      </nav>
+      <div class="search_bar">
+        <span class="material-symbols-outlined search_icon">search</span>
+        <input
+          class="search_input"
+          placeholder="Search for products, brands and more"
+        />
+      </div>
+      <div class="action_bar">
+        <a class="action_container" href="/singup">
+          <span class="material-symbols-outlined action_icon">person</span>
+          <span class="action_name">Profile</span>
+      </a>
+
+      <a class="action_container" href="/whislist">
+          <span class="material-symbols-outlined action_icon">favorite</span>
+          <span class="action_name">Wishlist</span>
+      </a>
+
+        <a class="action_container" href="bag">
+          <span class="material-symbols-outlined action_icon"
+            >shopping_bag</span
+          >
+          <span class="action_name">Bag</span>
+          <span class="bag-item-count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+        <div id="signinbox">
+            <div id="textbox">
+              <div id="signintext">
+                <p class="signinheader">CREATE A NEW ACCOUNT</p>
+              </div>
+              <form id="formContainer">
+                <input type="text" placeholder="Enter your name" id="UserName" />
+                <input type="Number" placeholder="Mobile No." id="Number" />
+                <input type="email" placeholder="Email" id="Email" />
+                <input type="password" placeholder="Password" id="Password" />
+                <!-- <input class="signup-btn" type="submit" value="Register" /> -->
+              </form>
+              <div id="alert"></div>
+              <br />
+              <button class="signinbtn" onclick="storeDetails()">SIGN UP</button >
+              <br />
+              <p style="text-align: center">
+                Already have an account <span onclick="loginpage()">click Here</span>
+              </p>
+            </div>
+          </div> 
+    </main>
+    <footer>
+      <div class="footer_container">
+        <div class="footer_column">
+          <h3>ONLINE SHOPPING</h3>
+
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+          <a href="#">Home & Living</a>
+          <a href="#">Beauty</a>
+          <a href="#">Gift Card</a>
+          <a href="#">Myntra Insider</a>
+        </div>
+
+        <div class="footer_column">
+          <h3>ONLINE SHOPPING</h3>
+
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+          <a href="#">Home & Living</a>
+          <a href="#">Beauty</a>
+          <a href="#">Gift Card</a>
+          <a href="#">Myntra Insider</a>
+        </div>
+
+        <div class="footer_column">
+          <h3>ONLINE SHOPPING</h3>
+
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+          <a href="#">Home & Living</a>
+          <a href="#">Beauty</a>
+          <a href="#">Gift Card</a>
+          <a href="#">Myntra Insider</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2024 www.EvaFashion .com. All rights reserved.
+      </div>
+    </footer>
+    <script src="scripts/signup.js"></script>
+  </body>
+</html>
+<!-- 
+<script>
+  const form = document.getElementById("formContainer");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const name = document.getElementById("Name").value;
+    const mobileno = document.getElementById("mobileno").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("Password").value;
+
+    const result = await fetch("/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        mobileno,
+        email,
+        password,
+      }),
+    }).then((res) => res.json());
+    if (result.status === "ok") {
+      alert("success");
+    } else {
+      alert(result.error);
+    }
+  });
+</script>  -->
